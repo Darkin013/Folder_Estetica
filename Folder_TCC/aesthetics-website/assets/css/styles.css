@@ -17,6 +17,11 @@ body {
     display: flex;
     flex-direction: column;
     color: #d4af37 !important; /* Define a cor dourada para todo o texto */
+    flex: 1;
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
 }
 
 .header {
@@ -99,12 +104,12 @@ body {
 }
 
 .white-and-gold {
-    background-color: #ffffff; /* Branco */
-    color: #d4af37; /* Dourado */
+    background-color: #ffffff !important; /* Fundo branco */
+    color: #d4af37 !important; /* Texto dourado */
 }
 
 .gold-text {
-    color: #d4af37 !important; /* Dourado */
+    color: #d4af37 !important; /* Texto dourado */
 }
 
 .nav-wrapper.white-and-gold {
@@ -142,6 +147,15 @@ h1 {
 .nav-wrapper {
     background-color: #ffffff; /* Fundo branco */
     border-bottom: 2px solid #d4af37; /* Linha dourada no menu */
+}
+
+.nav-wrapper a {
+    color: #d4af37 !important; /* Links dourados */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.nav-wrapper a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 .estetica-section {
@@ -231,3 +245,4 @@ h1, h2, h3, h4, h5, h6, p, li, span {
 .page-footer ul li a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
+
