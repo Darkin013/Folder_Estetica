@@ -51,12 +51,25 @@ main {
 }
 
 .card-title {
-    color: #d4af37 !important; /* Títulos dourados */
-    font-weight: bold;
+    color: #ffffff !important; /* Define o título dos cards como branco */
+    font-weight: bold; /* Mantém o texto em negrito */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona uma leve sombra para melhorar a legibilidade */
 }
 
 .card-content p {
     color: #d4af37 !important; /* Texto dourado */
+}
+
+.card-image {
+    height: 100%; /* Faz a altura da box ocupar todo o espaço disponível */
+    width: 100%; /* Faz a largura da box ocupar todo o espaço disponível */
+    overflow: hidden; /* Garante que partes da imagem que excedam a box sejam cortadas */
+}
+
+.card-image img {
+    height: 100%; /* Faz a imagem ocupar toda a altura da box */
+    width: 100%; /* Faz a imagem ocupar toda a largura da box */
+    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente para preencher o espaço */
 }
 
 .container {
